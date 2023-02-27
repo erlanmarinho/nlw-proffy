@@ -73,14 +73,10 @@
       </header>
 
       <main>
-        
         {%for proffy in proffys %}
-          <article class="teacher-item">
+        <article class="teacher-item">
           <header>
-            <img
-              src="{{proffy.avatar}}"
-              alt="{{proffy.name}}"
-            />
+            <img src="{{proffy.avatar}}" alt="{{proffy.name}}" />
             <div>
               <strong>{{proffy.name}}</strong>
               <span>{{proffy.subject}}</span>
@@ -89,16 +85,17 @@
           <p>{{proffy.bio}}</p>
           <footer>
             <p>Preço/horas <strong>R$ {{proffy.cost}}</strong></p>
-            <button type="button">
+            <a
+              href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{proffy.whatsapp}}&text=tenho interesse na sua aula de {{proffy.subject}} {{proffy.name}}"
+              class="button"
+              target="_blank"
+            >
               <img src="/images/icons/whatsapp.svg" alt="whatsapp" /> Entrar em
               contato
-            </button>
+            </a>
           </footer>
-          </article >
+        </article>
         {%endfor%}
-       
-
-        
       </main>
     </div>
   </body>

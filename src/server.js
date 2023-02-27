@@ -22,6 +22,18 @@ const proffys = [
     weekday: [1],
     time_from: [720],
     time_to: [1220]
+  },
+
+  {
+    name: "Dean Lucas",
+    avatar: "https://avatars.githubusercontent.com/u/56049062?v=4",
+    whatsapp: 99985075753,
+    bio: `Entusiasta das melhores tecnologias de química avançada.<b></b>Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já pessaram por uma das minhas explosões.`,
+    subject: "Matematica",
+    cost: "20",
+    weekday: [1],
+    time_from: [720],
+    time_to: [1220]
   }
 ]
 
