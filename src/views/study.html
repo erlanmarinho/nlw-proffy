@@ -73,57 +73,32 @@
       </header>
 
       <main>
-        <article class="teacher-item">
+        
+        {%for proffy in proffys %}
+          <article class="teacher-item">
           <header>
             <img
-              src="https://avatars.githubusercontent.com/u/56049062?v=4"
-              alt="Erlan Marinho"
+              src="{{proffy.avatar}}"
+              alt="{{proffy.name}}"
             />
             <div>
-              <strong>Erlan Marinho</strong>
-              <span>Química</span>
+              <strong>{{proffy.name}}</strong>
+              <span>{{proffy.subject}}</span>
             </div>
           </header>
-          <p>
-            Entusiasta das melhores tecnologias de química avançada.<b
-            ></b>Apaixonado por explodir coisas em laboratório e por mudar a
-            vida das pessoas através de experiências. Mais de 200.000 pessoas já
-            pessaram por uma das minhas explosões.
-          </p>
+          <p>{{proffy.bio}}</p>
           <footer>
-            <p>Preço/horas <strong>R$ 20,00</strong></p>
+            <p>Preço/horas <strong>R$ {{proffy.cost}}</strong></p>
             <button type="button">
               <img src="/images/icons/whatsapp.svg" alt="whatsapp" /> Entrar em
               contato
             </button>
           </footer>
-        </article >
+          </article >
+        {%endfor%}
+       
 
-        <article class="teacher-item">
-          <header>
-            <img
-              src="https://avatars.githubusercontent.com/u/56049062?v=4"
-              alt="Erlan Marinho"
-            />
-            <div>
-              <strong>Erlan Marinho</strong>
-              <span>Química</span>
-            </div>
-          </header>
-          <p>
-            Entusiasta das melhores tecnologias de química avançada.<b
-            ></b>Apaixonado por explodir coisas em laboratório e por mudar a
-            vida das pessoas através de experiências. Mais de 200.000 pessoas já
-            pessaram por uma das minhas explosões.
-          </p>
-          <footer>
-            <p>Preço/horas <strong>R$ 20,00</strong></p>
-            <button type="button">
-              <img src="/images/icons/whatsapp.svg" alt="whatsapp" /> Entrar em
-              contato
-            </button>
-          </footer>
-        </article>
+        
       </main>
     </div>
   </body>

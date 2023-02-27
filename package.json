@@ -1,0 +1,27 @@
+{
+  "name": "nlw-proffy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nunjucks": "^3.2.3"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erlanmarinho/nlw-proffy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erlanmarinho/nlw-proffy/issues"
+  },
+  "homepage": "https://github.com/erlanmarinho/nlw-proffy#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
